@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Начало</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://kit.fontawesome.com/9ae933b4ad.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    </head>
+    <body>
+        <div id="loading-overlay">
+            <div class="loading-spinner"></div>
+            <p>Моля изчакайте...</p>
+        </div>
+        <header id="header">
+            <nav id="nav">
+                <!--Navbar to be displayed here-->
+            </nav>
+            <h1 class="moto">Добре дошли в нашият свят</h1>
+            <a href="catalogue.html" class="btn">Към каталог</a>
+            <div class="wallpaper-overlay"></div>
+        </header>
+        <main>     
+            <section class="categories">
+                <h1 style="margin: 0; text-align: center; font-size: 30px">Разнообразие от продукти</h1>
+                <img src="images/ornament.png" width="100" style="position: absolute; bottom: 10px; left: 30px;transform: rotate(180deg);" alt="roseornament">
+                <div class="items-container">
+                    <div class="border">
+                    <a href="candles.html">    
+                        <div class="item">                        
+                            <div class="overlay-item">
+                                <p>Декоративни свещи</p>
+                            </div>
+                        </div>
+                    </a>
+                        </div>
+                    <div class="border">
+                    <div class="item" style="background-image: url('images/soap.jpg')">
+                        <div class="overlay-item"> <p>Глицеринови сапуни</p></div>
+                    </div>
+                    </div>
+                    <div class="border">
+                    <div class="item" style="background-image: url('images/aroma.jpg'); background-position: bottom center">
+                        <div class="overlay-item"> <p>Ароматизатори</p></div>
+                    </div>
+                </div>
+                    </div>
+            </section>
+            <section class="for-wedding">
+                <h1>За вашата сватба</h1>
+                <p>Позволете ни да бъдем част от специалният за вас ден, като изберете от нашите красиви подаръци за гости.</p>
+                <a href="" class="btn">Виж повече</a>
+                <div class="wallpaper-overlay"></div>
+            </section>
+            <section class="wholesale-partner">
+                <h1>Станете наш партньор</h1>
+                <p>С разнообразните ни продукти и гъвкави цени, можете да обогатите асортимента си.</p>
+                <a href="" class="btn">Свържете се с нас</a>
+                <div class="wallpaper-overlay"></div>
+            </section>
+        </main>
+        <footer>
+            <!--Footer to be displayed here...-->
+        </footer>
+        <script src="main.js"></script>
+        <script>                     
+            $('footer').load("footer.html");
+            $('nav').load('navbar.html');
+        </script>
+    </body>
+</html>

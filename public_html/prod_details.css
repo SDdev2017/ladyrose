@@ -1,0 +1,144 @@
+.fa-xmark
+{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 13px;
+}
+            
+.container
+{
+    display: flex;
+    flex-direction: row;     
+    width: 100%;
+    margin-top: 70px;
+}
+            
+.images
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+            
+.details
+{
+    display: flex;
+     flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+            
+.details h2
+{
+    margin: 0;                
+    color: black;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(255,153,230);
+}
+            
+table, tbody
+{
+    width: 60%;
+    border-collapse: collapse;
+}
+            
+th,td
+{
+    padding: 20px 0px;
+     border: 0px;
+    font-size: 20px;
+    text-align: left;
+}
+            
+.more-img
+{
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-sta  
+}
+            
+.more-img img
+{
+     cursor: pointer;
+}
+            
+.modal
+{
+    background-color: rgba(0,0,0,0.9);
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+            
+.full-img
+{
+    width: 70%; 
+    height: auto;
+}
+            
+.hd
+{
+    text-transform: uppercase;
+}
+            
+@media only screen and (max-width: 560px)
+{
+    .container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+                
+    .images
+    {
+        width: 100%;
+    }
+                    
+    .details
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+                
+    .details tab
+    {
+        width: 80%;
+    }
+                
+    details h2
+    {
+        width: 80%;
+    }
+                
+    .full-img
+    {
+        width: 100%;
+    }
+                
+    th, td
+    {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    table, tbody{
+        width: 90%;
+    }
+}

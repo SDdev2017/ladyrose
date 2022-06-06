@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">       
+        <script src="https://kit.fontawesome.com/9ae933b4ad.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            nav
+            {
+                background-color: black;
+                height: 100px;   
+                position: static;
+            }
+
+            main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+             
+            .items-container
+            {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding-top: 70px;
+            }
+
+            .item
+            {
+                background-image: url("images/candles.webp");
+                background-size: cover;
+                background-position: center;
+                width: 250px;
+                height: 220px;
+                cursor: pointer;
+                position: relative;
+                transition: 0.5s transform;
+            }
+
+            .border
+            {
+                overflow: hidden;
+            }
+
+            .border:not(:last-child)
+            {
+                margin-right: 60px;
+            }
+
+            .overlay-item
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.6);
+                z-index: 2;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                transition: 1s opacity;
+            }
+
+            .overlay-item p
+            {
+                color: white;
+                z-index: 3;
+                font-size: 18px;
+                text-transform: uppercase;
+            }   
+
+            .overlay-item:hover
+            {
+                opacity: 0;
+            }
+
+            .item:hover
+            {
+                transform: scale(1.2);
+            }
+            
+            @media only screen and (max-width: 560px)
+            {
+                .items-container
+                {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .border
+                {
+                    margin-top: 30px;                   
+                }
+                
+                .border:not(:last-child)
+                {
+                    margin-right: 0px;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="loading-overlay">
+            <div class="loading-spinner"></div>
+            <p>Моля изчакайте...</p>
+        </div>
+            <nav id="nav">
+                
+            </nav>
+        <main>
+            <h1 class="underlined">Каталог</h1>
+            <div class="items-container">
+                <div class="border">
+                    <a href="candles.html">    
+                        <div class="item">                        
+                            <div class="overlay-item">
+                                <p>Декоративни свещи</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="border">
+                    <div class="item" style="background-image: url('images/soap.jpg')">
+                        <div class="overlay-item"> 
+                            <p>Глицеринови сапуни</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="item" style="background-image: url('images/aroma.jpg'); background-position: bottom center">
+                        <div class="overlay-item"> 
+                            <p>Ароматизатори</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="item" style="background-image: url('images/wedding.jpg'); background-position: bottom center">
+                        <div class="overlay-item"> 
+                            <p>Празнични подаръци</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer style='margin-top: 90px;'>
+            
+        </footer>
+        <script src="main.js"></script>
+        <script type="text/javascript">
+            $('footer').load("footer.html");
+            $('nav').load('navbar.html');
+        </script>
+    </body>
+</html>

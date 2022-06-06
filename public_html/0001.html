@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="prod_details.css">
+        <script src="https://kit.fontawesome.com/9ae933b4ad.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            nav
+            {
+                background-color: black;
+                height: 100px;   
+                position: static;
+            }                      
+        </style>
+    </head>
+    
+    <body>
+        <div id="loading-overlay">
+            <div class="loading-spinner"></div>
+            <p>Моля изчакайте...</p>
+        </div>
+        <div class="modal">
+            <i class="fa-solid fa-xmark" onclick="hideModal();"></i>
+            <img src="candle.jpg" alt="img" class="full-img">
+        </div>
+        
+            <nav id="nav">
+                
+            </nav>
+            <main>
+                <h1 style="text-align: center" class="hd">Свещ Роза в Чаша</h1>
+                <div class="container">
+                    <div class="images">
+                        <img src="candle.jpg" style="width: 80%; height: auto; cursor: pointer" alt="img" onclick="showModal(this);">
+                        <div class="more-img">
+                            <img src="rose2.jpg" style="height: auto; width: 47%;" alt="candles" onclick="showModal(this);">
+                            <img src="rose.jpg" style="height: auto; width: 47%; margin-left: 6%;" alt="candles" onclick="showModal(this);">
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h2>Характеристики</h2>
+                        <table>
+                            <tr>
+                                <th><i class="fa-solid fa-scale-balanced"></i> Тегло</th>
+                                <td>120гр.</td>
+                            </tr>
+                            <tr>
+                                <th><i class="fa-solid fa-ruler"></i> Височина</th>
+                                <td>120см</td>
+                            </tr>
+                            <tr>
+                                <th><i class="fa-solid fa-circle-notch"></i> Диаметър</th>
+                                <td>120см</td>
+                            </tr>
+                            <tr>
+                                <th><i class="fa-solid fa-bolt"></i> Материал</th>
+                                <td>Парафин</td>
+                            </tr>
+                            <tr>
+                                <th><i class="fa-solid fa-fire-flame-curved"></i> Време на горене</th>
+                                <td>120 часа</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </main>
+            <footer style='margin-top: 90px;'>
+                
+            </footer>
+        <script src="main.js"></script>
+        <script>
+            $('footer').load("footer.html");
+            $('nav').load('navbar.html');
+        </script>
+    </body>
+</html>

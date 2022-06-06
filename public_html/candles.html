@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="products.css">
+        <script src="https://kit.fontawesome.com/9ae933b4ad.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            nav
+            {
+                background-color: black;
+                height: 100px;   
+                position: static;
+            }
+             
+            .fa-xmark
+            {
+                font-size: 30px;
+                color: black;
+                cursor: pointer;
+                position: absolute;
+                right: 10px;
+                top: 5px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="loading-overlay">
+            <div class="loading-spinner"></div>
+            <p>Моля изчакайте...</p>
+        </div>
+            <nav id="nav">
+                
+            </nav>
+        <main>
+            <div class="wallpaper">
+                <div class="wall-overlay"></div>
+                <h1>Декоративни Свещи</h1>
+                <p id='desc'>Имаме богат опит в производството на декоративни свещи. 
+                    Имаме богат опит в производството на декоративни свещи. Имаме богат опит в производството на декоративни свещи.
+                </p>
+            </div>
+           
+            <div class="row">
+                <a class="border" href="0001.html">
+                    <div class="product" style="background-image: url('images/candles.webp')">
+                        <div class="label">Свещ роза в чаша</div>
+                    </div>
+                </a>
+                <a class="border" href="#">
+                    <div class="product" style="background-image: url('sunflower.jpg'); background-position-y: 70%">
+
+                        <div class="label">Свещ Слънчоглед</div>
+                    </div>
+                </a>
+                <a class="border" href="#">
+                    <div class="product" style="background-image: url('rose.jpg'); background-position: 50% 50%">
+
+                        <div class="label">Свещ Роза 250гр.</div>
+                    </div>
+                </a>
+                <a class="border" href="#">
+                    <div class="product" style="background-image: url('images/candles.webp')">
+
+                        <div class="label">Свещ роза в чаша</div>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a class="border" href="#">
+                    <div class="product" style="background-image: url('images/candles.webp')">
+
+                        <div class="label">Свещ роза в чаша</div>
+                    </div>
+                </a>
+                <a class="border" href="#">
+                    <div class="product" style="background-image: url('images/candles.webp')">
+
+                        <div class="label">Свещ роза в чаша</div>
+                    </div>
+                </a>
+                <a class="border" href="#">
+                    <div class="product" style="background-image: url('images/candles.webp')">
+
+                        <div class="label">Свещ роза в чаша</div>
+                    </div>
+                </a>
+                <a class="border" href="#">
+                    <div class="product" style="background-image: url('images/candles.webp')">
+
+                        <div class="label">Свещ роза в чаша</div>
+                    </div>
+                </a>
+            </div>
+        </main>
+        <footer style='margin-top: 90px;'>
+            
+        </footer>
+        <script src="main.js"></script>
+        <script type="text/javascript">
+            $('footer').load("footer.html");
+            $('nav').load('navbar.html');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Контакти</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="contacts.css">
+        <script src="https://kit.fontawesome.com/9ae933b4ad.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>           
+            nav
+            {
+                background-color: black;
+                height: 100px;   
+                position: static;
+            }    
+        </style>
+    </head>  
+    <body>   
+        <div id="loading-overlay">
+            <div class="loading-spinner"></div>
+            <p>Моля изчакайте...</p>
+        </div>   
+        <nav id="nav">
+          <!-- Navigation content to be displayed from exnternal file navbar.html-->      
+        </nav>
+        <main>
+            <!--<div class="wallpaper">
+                <div class="wall-overlay"></div>
+                <h1>Свържете се с нас</h1>
+            </div>-->
+            <h1 class="underlined">Контакти</h1>
+            
+            <!--<img src="images/background-contactpage.png" alt="bck" class="back-image">-->
+            <div class="ctc-container">
+                <img src="images/envelope.png" width="350" alt="env" style="align-self: center;">
+                <div class="contact-form2" style="border-left: 0px; ">
+                    <form>
+                        <input type="text" name="email" placeholder="E-mail">
+                        <input type="text" name="name" style="margin-top: 20px;" placeholder="Вашето име">
+                        <input type="text" name="about" style="margin-top: 20px;" placeholder="Относно">
+                        <textarea style="margin-top: 20px; height: 100px" placeholder="Вашето съобщение..."></textarea>
+                        <input type="submit" value="Изпратете запитване" style="margin-top: 20px;">
+                    </form>
+                </div>
+            </div>
+            <div class="coordinates">
+                <span>Телефон за връзка: 0877 683 664</span>
+                <span>E-mail: ladyrose2277</span>
+                <span>Локация: Казанлък, България</span>
+            </div>
+        </main>
+        <footer>
+           <!-- Footer content to be displayed from exnternal file footer.html-->          
+        </footer>
+        <script src="main.js"></script>
+        <script>                    
+            $('footer').load("footer.html");
+            $('nav').load('navbar.html');
+        </script>
+        
+    </body>
+</html>
